@@ -1,1 +1,28 @@
 # C++ GitHub Actions Workflow
+name: C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Dependencies
+      run: sudo apt-get update && sudo apt-get install -y cmake g++
+
+    - name: Build C++ Project
+      run: |
+        cd cpp
+        mkdir -p build && cd build
+        cmake ..
+        make
+
+    - name: Run C++ Tests
+      run: ./cpp/build/TwoSumTest
