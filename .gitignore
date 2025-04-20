@@ -1,0 +1,58 @@
+# Eclipse Core
+.project
+.classpath
+.cproject
+.settings/
+.metadata/
+bin/
+target/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+/java/bin/*
+/java/target/**/*.class
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv
+*.env
+*.venv
+
+# C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.out
+*.a
+*.dSYM/
+build/
+cmake-build-*/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE Specific
+.idea/
+*.iml
+.vscode/
+
+# Scripts output
+scripts/*.log
