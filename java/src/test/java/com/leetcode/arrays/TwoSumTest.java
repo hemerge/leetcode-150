@@ -7,6 +7,6 @@ public class TwoSumTest {
     @Test
     public void testTwoSum() {
         TwoSum ts = new TwoSum();
-        assertArrayEquals(new int[]{0, 1}, ts.twoSum(new int[]{2, 7, 11, 15}, 9));
+        assertArrayEquals(new int[]{0, 1}, ts.twoSumSinglePassHash(new int[]{2, 7, 11, 15}, 9));
     }
 }
