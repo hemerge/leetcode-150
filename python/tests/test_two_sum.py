@@ -1,5 +1,5 @@
 import unittest
-from arrays.two_sum import two_sum  # Remove "python." prefix
+from two_sum import TwoSumSolver  # Remove "python." prefix
 
 class TestTwoSum(unittest.TestCase):
     def test_two_sum(self):
